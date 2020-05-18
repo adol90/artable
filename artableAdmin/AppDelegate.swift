@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  artable
+//  artableAdmin
 //
 //  Created by Adel Kazme on 24/09/1441 AH.
 //  Copyright © 1441 Adel Kazme. All rights reserved.
@@ -17,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        
         return true
     }
 
