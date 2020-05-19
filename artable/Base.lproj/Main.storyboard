@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="szt-6z-fXO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="szt-6z-fXO">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -259,27 +259,21 @@
                     <view key="view" contentMode="scaleToFill" id="ft6-W9-2X6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="0S7-UE-WEt" customClass="RoundedButton" customModule="artable" customModuleProvider="target">
-                                <rect key="frame" x="20" y="161" width="374" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="yFv-2s-t9T"/>
-                                </constraints>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="rLU-AX-Twu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8gh-rZ-0M6">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="ygc-w5-LUy">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" id="0S7-UE-WEt" customClass="RoundedButton" customModule="artable" customModuleProvider="target">
+                                <rect key="frame" x="20" y="0.0" width="374" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="logoutPressed:" destination="qvm-np-Uw5" eventType="touchUpInside" id="bqC-jv-WCy"/>
                                 </connections>
                             </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="0S7-UE-WEt" firstAttribute="top" secondItem="rLU-AX-Twu" secondAttribute="top" constant="73" id="aAd-ve-fjG"/>
-                            <constraint firstItem="rLU-AX-Twu" firstAttribute="trailing" secondItem="0S7-UE-WEt" secondAttribute="trailing" constant="20" id="mvv-de-61E"/>
-                            <constraint firstItem="0S7-UE-WEt" firstAttribute="leading" secondItem="rLU-AX-Twu" secondAttribute="leading" constant="20" id="yQ4-nb-xpb"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="rLU-AX-Twu"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="8gh-rZ-0M6"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="logoutLabel" destination="0S7-UE-WEt" id="JhW-CN-fzS"/>
                     </connections>
@@ -307,11 +301,11 @@
             <point key="canvasLocation" x="305.79710144927537" y="125.89285714285714"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="K8b-Ru-ecW"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="bg_left1.jpeg" width="1949" height="3441"/>
         <image name="red_check.png" width="40" height="40"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="K8b-Ru-ecW"/>
-    </inferredMetricsTieBreakers>
 </document>
