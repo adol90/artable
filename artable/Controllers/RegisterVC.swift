@@ -58,17 +58,20 @@ class RegisterVC: UIViewController {
         self.activityIndicator.startAnimating()
         
         
-        Auth.auth().createUser(withEmail: usernametxt.text!, password: passwordTxt.text!) { (AuthDataResult, error) in
-            
-
+        
+        
+        guard let authUser = Auth.auth().currentUser else { return }
+        let credential = EmailAuthProvider.credential(withEmail: emailTxt.text! , password: passwordTxt.text!)
+        authUser.linkAndRetrieveData(with: credential) { (result, error) in
             if error != nil {
-                
-                print("couldnt create user \(error)")
+                print("error while creating an account")
             } else {
-                print("user has been created successfully")
+                print("registered successfully")
                 self.activityIndicator.stopAnimating()
+                self.performSegue(withIdentifier: "registerToHomeVC", sender: self)
             }
         }
+        
         
     }
     

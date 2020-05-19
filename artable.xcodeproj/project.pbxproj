@@ -53,6 +53,8 @@
 		D703B0D91D2CE31D5A1FCDDD /* Pods_artable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65E58D5C39519280FB4BF7A /* Pods_artable.framework */; };
 		DD4FD384247326C0002D1443 /* RoundedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD383247326C0002D1443 /* RoundedModel.swift */; };
 		DD4FD385247326C1002D1443 /* RoundedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD383247326C0002D1443 /* RoundedModel.swift */; };
+		DD4FD38824732E16002D1443 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD38724732E16002D1443 /* HomeVC.swift */; };
+		DD4FD38924732E16002D1443 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD38724732E16002D1443 /* HomeVC.swift */; };
 		DDD7FFAC2472CA59007D3474 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDD7FFAB2472CA59007D3474 /* GoogleService-Info.plist */; };
 		DDD7FFAE2472CA69007D3474 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDD7FFAD2472CA69007D3474 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -110,6 +112,7 @@
 		B65E58D5C39519280FB4BF7A /* Pods_artable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_artable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DF680A4F0048F267E79C7E /* Pods-artable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-artable.release.xcconfig"; path = "Pods/Target Support Files/Pods-artable/Pods-artable.release.xcconfig"; sourceTree = "<group>"; };
 		DD4FD383247326C0002D1443 /* RoundedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedModel.swift; sourceTree = "<group>"; };
+		DD4FD38724732E16002D1443 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		DDD7FFAB2472CA59007D3474 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DDD7FFAD2472CA69007D3474 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAE80F1C09886387C0CC5D0B /* Pods_artableAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_artableAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,8 +174,7 @@
 				DDD7FFAB2472CA59007D3474 /* GoogleService-Info.plist */,
 				774C34342471D17600C9F88B /* AppDelegate.swift */,
 				774C34362471D17600C9F88B /* SceneDelegate.swift */,
-				777814CB2472983100920F34 /* LoginVC.swift */,
-				774C34382471D17600C9F88B /* RegisterVC.swift */,
+				DD4FD38624732DE8002D1443 /* Controllers */,
 				774C343A2471D17600C9F88B /* Main.storyboard */,
 				774C343D2471D17C00C9F88B /* Assets.xcassets */,
 				774C343F2471D17C00C9F88B /* LaunchScreen.storyboard */,
@@ -250,6 +252,16 @@
 				DD4FD383247326C0002D1443 /* RoundedModel.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		DD4FD38624732DE8002D1443 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				777814CB2472983100920F34 /* LoginVC.swift */,
+				774C34382471D17600C9F88B /* RegisterVC.swift */,
+				DD4FD38724732E16002D1443 /* HomeVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,6 +477,7 @@
 				DD4FD384247326C0002D1443 /* RoundedModel.swift in Sources */,
 				774C34392471D17600C9F88B /* RegisterVC.swift in Sources */,
 				777814CC2472983100920F34 /* LoginVC.swift in Sources */,
+				DD4FD38824732E16002D1443 /* HomeVC.swift in Sources */,
 				774C34352471D17600C9F88B /* AppDelegate.swift in Sources */,
 				774C34372471D17600C9F88B /* SceneDelegate.swift in Sources */,
 			);
@@ -475,6 +488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				774C34532471D9E200C9F88B /* ViewController.swift in Sources */,
+				DD4FD38924732E16002D1443 /* HomeVC.swift in Sources */,
 				774C344F2471D9E200C9F88B /* AppDelegate.swift in Sources */,
 				774C34512471D9E200C9F88B /* SceneDelegate.swift in Sources */,
 				DD4FD385247326C1002D1443 /* RoundedModel.swift in Sources */,

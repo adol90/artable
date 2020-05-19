@@ -41,6 +41,9 @@ class LoginVC: UIViewController {
                 
                 print("signed in successfully")
                 self.activityIndicator.stopAnimating()
+                self.performSegue(withIdentifier: "toHomeVC", sender: self)
+                
+                
             }
         }
         
@@ -48,6 +51,11 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func guestButtonPressed(_ sender: Any) {
+        
+        performSegue(withIdentifier: "toHomeVC", sender: self)
+        Auth.auth().signInAnonymously { (result, error) in
+            print("signed in anonymously from logVC")
+        }
     }
     
 
