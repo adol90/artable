@@ -53,9 +53,23 @@ class RegisterVC: UIViewController {
     
     @IBAction func registerPressed(_ sender: Any) {
         
-        if passwordTxt.text?.count == 0 && confirmPasswordTxt.text?.count == 0 {return }
+        if passwordTxt.text?.count == 0 || confirmPasswordTxt.text?.count == 0 || passwordTxt.text != confirmPasswordTxt.text {
+            simpleAlert(title: "خطأ", msg: "كلمتا السر غير متطابقتين")
+            return }
+        
+        
+        guard let email = emailTxt.text , !email.isEmpty ,
+            let username = usernametxt.text , !username.isEmpty ,
+            let password = passwordTxt.text , !password.isEmpty 
+        else { simpleAlert(title: "خطأ", msg: "الرجاء تعبئة كل الخانات")
+            return
+        }
+        
+        
         self.activityIndicator.isHidden = false
         self.activityIndicator.startAnimating()
+        
+        
         
         
         

@@ -16,13 +16,14 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if Auth.auth().currentUser == nil {
+            Auth.auth().signInAnonymously { (result, error) in
+                print("signedIn Anonymously :o")
+            } } else {
+                print("")}
 
-//        if Auth.auth().currentUser == nil {
-//            Auth.auth().signInAnonymously { (result, error) in
-//                print("signedIn Anonymously :o")
-//            }
-//
-//        }
+        
     }
     
     
@@ -38,12 +39,15 @@ class HomeVC: UIViewController {
         if let user = Auth.auth().currentUser , !user.isAnonymous{
         do {try Auth.auth().signOut()
             print("signedOut :) ")
-            navigationController?.popToRootViewController(animated: true)
+//            navigationController?.popToRootViewController(animated: true)
+performSegue(withIdentifier: "toLogin", sender: self)
+            
         }
         catch {print("can't signout")
             self.handleFireAuthError(error: error)
             } } else {
-            navigationController?.popToRootViewController(animated: true)
+//            navigationController?.popToRootViewController(animated: true)
+    performSegue(withIdentifier: "toLogin", sender: self)
         }
 
 

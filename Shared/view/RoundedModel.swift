@@ -35,6 +35,13 @@ class RoundedImageView : UIImageView {
       }
 }
 
+class RoundedView: UIView {
+      override func awakeFromNib() {
+          super.awakeFromNib()
+          layer.cornerRadius = 6
+}
+}
+
 
 
 

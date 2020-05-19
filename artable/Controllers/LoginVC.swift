@@ -25,13 +25,23 @@ class LoginVC: UIViewController {
     
     
     @IBAction func forgotPasswordPressed(_ sender: Any) {
+        
+        let xibVC = ForgetPasswordVC()
+         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //عشان نخلي الفيوكنترولر الستايل حقه يظهر بشكل كامل مختفي ل ظهر واذا الغيناه يتدرج اختفاءه لين يختفي  حركة حلوه تغيير عن الشو الي يظهر من تحت لفوق ويتخفي من فوق لتحت .
+        xibVC.modalTransitionStyle = .crossDissolve
+        xibVC.modalPresentationStyle = .overCurrentContext
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        present(xibVC, animated: true, completion: nil)
     }
     
     @IBAction func loginPressed(_ sender: Any) {
         self.activityIndicator.startAnimating()
         self.activityIndicator.isHidden = false
         
-        if emailText.text?.count == 0 || passwordTxt.text?.count == 0 {return}
+        if emailText.text?.count == 0 || passwordTxt.text?.count == 0 {
+            simpleAlert(title: "خطأ", msg: "الرجاء تعبئة كل الخانات")
+            return}
         
         Auth.auth().signIn(withEmail: emailText.text! , password: passwordTxt.text!) { (AuthDataResult, error) in
             
@@ -53,15 +63,15 @@ class LoginVC: UIViewController {
     
     @IBAction func guestButtonPressed(_ sender: Any) {
         
-        
-        Auth.auth().signInAnonymously { (result, error) in
-            if error != nil {
-                self.handleFireAuthError(error: error!)
-            } else {
-            print("signed in anonymously from logVC")
-                self.performSegue(withIdentifier: "toHomeVC", sender: self)
-        }
-        }
+//        
+//        Auth.auth().signInAnonymously { (result, error) in
+//            if error != nil {
+//                self.handleFireAuthError(error: error!)
+//            } else {
+//            print("signed in anonymously from logVC")
+               performSegue(withIdentifier: "toHomeVC", sender: self)
+//        }
+//        }
     }
     
 

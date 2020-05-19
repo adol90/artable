@@ -55,6 +55,8 @@
 		DD4FD385247326C1002D1443 /* RoundedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD383247326C0002D1443 /* RoundedModel.swift */; };
 		DD4FD38824732E16002D1443 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD38724732E16002D1443 /* HomeVC.swift */; };
 		DD4FD38924732E16002D1443 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD38724732E16002D1443 /* HomeVC.swift */; };
+		F55DB683247485AA000D11BC /* ForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55DB681247485AA000D11BC /* ForgetPasswordVC.swift */; };
+		F55DB684247485AA000D11BC /* ForgetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F55DB682247485AA000D11BC /* ForgetPasswordVC.xib */; };
 		F5D0202A2473F05700EEF3A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5D020292473F05700EEF3A7 /* GoogleService-Info.plist */; };
 		F5D0202F2473F28D00EEF3A7 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D0202E2473F28D00EEF3A7 /* Extension.swift */; };
 /* End PBXBuildFile section */
@@ -113,6 +115,8 @@
 		C7DF680A4F0048F267E79C7E /* Pods-artable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-artable.release.xcconfig"; path = "Pods/Target Support Files/Pods-artable/Pods-artable.release.xcconfig"; sourceTree = "<group>"; };
 		DD4FD383247326C0002D1443 /* RoundedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedModel.swift; sourceTree = "<group>"; };
 		DD4FD38724732E16002D1443 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		F55DB681247485AA000D11BC /* ForgetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordVC.swift; sourceTree = "<group>"; };
+		F55DB682247485AA000D11BC /* ForgetPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordVC.xib; sourceTree = "<group>"; };
 		F5D020292473F05700EEF3A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F5D0202E2473F28D00EEF3A7 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		FAE80F1C09886387C0CC5D0B /* Pods_artableAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_artableAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +176,7 @@
 		774C34332471D17600C9F88B /* artable */ = {
 			isa = PBXGroup;
 			children = (
+				F55DB6802474851B000D11BC /* Xibs */,
 				774C34342471D17600C9F88B /* AppDelegate.swift */,
 				774C34362471D17600C9F88B /* SceneDelegate.swift */,
 				DD4FD38624732DE8002D1443 /* Controllers */,
@@ -262,6 +267,15 @@
 				DD4FD38724732E16002D1443 /* HomeVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F55DB6802474851B000D11BC /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				F55DB681247485AA000D11BC /* ForgetPasswordVC.swift */,
+				F55DB682247485AA000D11BC /* ForgetPasswordVC.xib */,
+			);
+			path = Xibs;
 			sourceTree = "<group>";
 		};
 		F5D0202D2473F23500EEF3A7 /* Utilities */ = {
@@ -385,6 +399,7 @@
 				774C348D2471DA3700C9F88B /* green_check@3x.png in Resources */,
 				F5D0202A2473F05700EEF3A7 /* GoogleService-Info.plist in Resources */,
 				774C34952471DA3700C9F88B /* red_trash@3x.png in Resources */,
+				F55DB684247485AA000D11BC /* ForgetPasswordVC.xib in Resources */,
 				774C34842471DA3700C9F88B /* Firestore Assets.sketch in Resources */,
 				774C34982471DA3700C9F88B /* bar_button_star@2x.png in Resources */,
 				774C348C2471DA3700C9F88B /* bar_button_cart.png in Resources */,
@@ -485,6 +500,7 @@
 				774C34392471D17600C9F88B /* RegisterVC.swift in Sources */,
 				F5D0202F2473F28D00EEF3A7 /* Extension.swift in Sources */,
 				777814CC2472983100920F34 /* LoginVC.swift in Sources */,
+				F55DB683247485AA000D11BC /* ForgetPasswordVC.swift in Sources */,
 				DD4FD38824732E16002D1443 /* HomeVC.swift in Sources */,
 				774C34352471D17600C9F88B /* AppDelegate.swift in Sources */,
 				774C34372471D17600C9F88B /* SceneDelegate.swift in Sources */,
