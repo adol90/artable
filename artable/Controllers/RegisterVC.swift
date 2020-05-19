@@ -62,9 +62,13 @@ class RegisterVC: UIViewController {
         
         guard let authUser = Auth.auth().currentUser else { return }
         let credential = EmailAuthProvider.credential(withEmail: emailTxt.text! , password: passwordTxt.text!)
-        authUser.linkAndRetrieveData(with: credential) { (result, error) in
+        authUser.link(with: credential) { (result, error) in
+
             if error != nil {
                 print("error while creating an account")
+                self.handleFireAuthError(error: error!)
+//                self.activityIndicator.isHidden = true
+//                self.activityIndicator.stopAnimating()
             } else {
                 print("registered successfully")
                 self.activityIndicator.stopAnimating()

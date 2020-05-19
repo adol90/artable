@@ -37,6 +37,7 @@ class LoginVC: UIViewController {
             
             if error != nil {
                 print("error while signing in")
+                self.handleFireAuthError(error: error!)
             } else {
                 
                 print("signed in successfully")
@@ -52,9 +53,14 @@ class LoginVC: UIViewController {
     
     @IBAction func guestButtonPressed(_ sender: Any) {
         
-        performSegue(withIdentifier: "toHomeVC", sender: self)
+        
         Auth.auth().signInAnonymously { (result, error) in
+            if error != nil {
+                self.handleFireAuthError(error: error!)
+            } else {
             print("signed in anonymously from logVC")
+                self.performSegue(withIdentifier: "toHomeVC", sender: self)
+        }
         }
     }
     

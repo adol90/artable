@@ -40,7 +40,9 @@ class HomeVC: UIViewController {
             print("signedOut :) ")
             navigationController?.popToRootViewController(animated: true)
         }
-        catch {print("can't signout")} } else {
+        catch {print("can't signout")
+            self.handleFireAuthError(error: error)
+            } } else {
             navigationController?.popToRootViewController(animated: true)
         }
 
