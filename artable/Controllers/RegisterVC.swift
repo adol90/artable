@@ -80,7 +80,7 @@ class RegisterVC: UIViewController {
 
             if error != nil {
                 print("error while creating an account")
-                self.handleFireAuthError(error: error!)
+                Auth.auth().handleFireAuthError(error: error! , VC : self)
 //                self.activityIndicator.isHidden = true
 //                self.activityIndicator.stopAnimating()
             } else {

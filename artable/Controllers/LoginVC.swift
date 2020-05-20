@@ -48,7 +48,7 @@ class LoginVC: UIViewController {
             
             if error != nil {
                 print("error while signing in")
-                self.handleFireAuthError(error: error!)
+                Auth.auth().handleFireAuthError(error: error! , VC : self)
             } else {
                 
                 print("signed in successfully")

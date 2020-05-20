@@ -38,7 +38,7 @@ class ForgetPasswordVC: UIViewController {
 //        })
         auth.sendPasswordReset(withEmail: emailAddress) { (error) in
             if error != nil {
-                self.handleFireAuthError(error: error!) } else {
+                Auth.auth().handleFireAuthError(error: error! , VC : self) } else {
                 self.simpleAlert(title: "رائع", msg: "تم ارسال رسالة اعادة التعيين لإيميلك بنجاح")
 
             }
