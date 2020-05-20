@@ -55,8 +55,8 @@
 		DD4FD385247326C1002D1443 /* RoundedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD383247326C0002D1443 /* RoundedModel.swift */; };
 		DD4FD38824732E16002D1443 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD38724732E16002D1443 /* HomeVC.swift */; };
 		DD4FD38924732E16002D1443 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD38724732E16002D1443 /* HomeVC.swift */; };
+		DDC516E62474AB4F005A1440 /* ForgetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC516E42474AB4F005A1440 /* ForgetPasswordVC.xib */; };
 		F55DB683247485AA000D11BC /* ForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55DB681247485AA000D11BC /* ForgetPasswordVC.swift */; };
-		F55DB684247485AA000D11BC /* ForgetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F55DB682247485AA000D11BC /* ForgetPasswordVC.xib */; };
 		F5D0202A2473F05700EEF3A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5D020292473F05700EEF3A7 /* GoogleService-Info.plist */; };
 		F5D0202F2473F28D00EEF3A7 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D0202E2473F28D00EEF3A7 /* Extension.swift */; };
 /* End PBXBuildFile section */
@@ -115,8 +115,8 @@
 		C7DF680A4F0048F267E79C7E /* Pods-artable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-artable.release.xcconfig"; path = "Pods/Target Support Files/Pods-artable/Pods-artable.release.xcconfig"; sourceTree = "<group>"; };
 		DD4FD383247326C0002D1443 /* RoundedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedModel.swift; sourceTree = "<group>"; };
 		DD4FD38724732E16002D1443 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		DDC516E42474AB4F005A1440 /* ForgetPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordVC.xib; sourceTree = "<group>"; };
 		F55DB681247485AA000D11BC /* ForgetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordVC.swift; sourceTree = "<group>"; };
-		F55DB682247485AA000D11BC /* ForgetPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordVC.xib; sourceTree = "<group>"; };
 		F5D020292473F05700EEF3A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F5D0202E2473F28D00EEF3A7 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		FAE80F1C09886387C0CC5D0B /* Pods_artableAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_artableAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -273,7 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				F55DB681247485AA000D11BC /* ForgetPasswordVC.swift */,
-				F55DB682247485AA000D11BC /* ForgetPasswordVC.xib */,
+				DDC516E42474AB4F005A1440 /* ForgetPasswordVC.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -369,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC516E62474AB4F005A1440 /* ForgetPasswordVC.xib in Resources */,
 				774C34942471DA3700C9F88B /* filled_star@2x.png in Resources */,
 				774C34412471D17C00C9F88B /* LaunchScreen.storyboard in Resources */,
 				774C34902471DA3700C9F88B /* filled_star.png in Resources */,
@@ -399,7 +400,6 @@
 				774C348D2471DA3700C9F88B /* green_check@3x.png in Resources */,
 				F5D0202A2473F05700EEF3A7 /* GoogleService-Info.plist in Resources */,
 				774C34952471DA3700C9F88B /* red_trash@3x.png in Resources */,
-				F55DB684247485AA000D11BC /* ForgetPasswordVC.xib in Resources */,
 				774C34842471DA3700C9F88B /* Firestore Assets.sketch in Resources */,
 				774C34982471DA3700C9F88B /* bar_button_star@2x.png in Resources */,
 				774C348C2471DA3700C9F88B /* bar_button_cart.png in Resources */,
