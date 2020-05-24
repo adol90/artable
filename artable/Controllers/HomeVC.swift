@@ -16,27 +16,19 @@ class HomeVC: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var categories = [Category]()
+    var category : Category!
+    var db : Firestore!
+    var listener : ListenerRegistration!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        db = Firestore.firestore()
         collictionView.delegate = self
         collictionView.dataSource = self
         collictionView.register(UINib(nibName: "CategoryCell", bundle: nil), forCellWithReuseIdentifier: "categoryCell")
+
         
-        
-        
-        
-        ////
-//
-//
-//        let category = Category.init(name: "Apple Store", id: "nothing", imgUrl: "https://images.unsplash.com/photo-1514924356010-4be7d201d78b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80", isActive: true, timeStamp: Timestamp())
-//
-//
-//        categories.append(category)
-        
-        
-        ////
         if Auth.auth().currentUser == nil {
             Auth.auth().signInAnonymously { (result, error) in
                 print("signedIn Anonymously :o")
@@ -54,6 +46,14 @@ class HomeVC: UIViewController {
           
         }
         else { logoutLabel.setTitle("Login", for: .normal)}
+        
+        setCategoryListener()
+         print("listener function is ON")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        listener.remove()
+        print("listener function is OFF")
     }
 
     
@@ -74,6 +74,66 @@ class HomeVC: UIViewController {
             performSegue(withIdentifier: "toLogin", sender: self)
         }
         
+        
+    }
+    
+    
+    // this is how we fetching data from firestore
+    func setCategoryListener() {
+        // this is the name of our colection in firestore database.
+        let collectionRefernce = db.collection("categories")
+        listener = collectionRefernce.addSnapshotListener { (snap, error) in
+            if error != nil {
+                debugPrint(error?.localizedDescription)
+                return
+            } else {
+                snap?.documentChanges.forEach({ (change) in
+                    let data = change.document.data()
+                    let category  = Category.init(data: data)
+                    switch change.type {
+                    case .added :
+                        self.onDocumentAdded(change: change, category: category)
+                    case .modified :
+                        self.onDocumentModified(change: change, category: category)
+                    case .removed :
+                        self.onDocumentRemoved(change: change)
+                       
+                    }
+                })
+            }
+        }
+        
+    }
+    
+    
+    func onDocumentAdded (change : DocumentChange , category : Category) {
+        let index = Int(change.newIndex)
+        categories.insert(category, at: index)
+        collictionView.insertItems(at: [IndexPath(item: index, section: 0)])
+        
+    }
+    
+    func onDocumentModified (change : DocumentChange , category : Category) {
+        
+        if change.newIndex == change.oldIndex {
+         let index = Int(change.newIndex)
+            categories[index] = category
+            collictionView.reloadItems(at: [IndexPath(item: index, section: 0)])
+        } else {
+            let oldIndex = Int(change.oldIndex)
+            let newIndex = Int(change.newIndex)
+            
+            categories.remove(at: oldIndex)
+            categories.insert(category, at: newIndex)
+            collictionView.moveItem(at: IndexPath(item: oldIndex, section: 0), to: IndexPath(item: newIndex, section: 0))
+        }
+        
+    }
+    
+    func onDocumentRemoved (change : DocumentChange) {
+         let index = Int(change.newIndex)
+        categories.remove(at: index)
+        collictionView.deleteItems(at: [IndexPath(item: index, section: 0)])
         
     }
     
@@ -103,17 +163,22 @@ extension HomeVC : UICollectionViewDelegate , UICollectionViewDataSource , UICol
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = view.frame.width
-        let cellWidth = (width - 50) / 2
+        let cellWidth = (width - 14) / 2
         let cellHight = cellWidth * 1.5
         
-        return CGSize(width: cellWidth, height: cellWidth)
+        return CGSize(width: cellWidth, height: cellHight)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        category = categories[indexPath.item]
         performSegue(withIdentifier: "toProductVC", sender: self)
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationVC = segue.destination as? ProductVC {
+            destinationVC.selectedCategory = category
+        }
+    }
     
     
     

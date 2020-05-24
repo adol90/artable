@@ -270,10 +270,10 @@
                                 <color key="color" red="0.83529411760000005" green="0.3921568627" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="otO-y9-Y3F">
-                                <rect key="frame" x="20" y="88" width="374" height="808"/>
+                                <rect key="frame" x="2" y="88" width="410" height="808"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QeR-pt-0kJ">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xXA-Bu-3cK">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -284,12 +284,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="otO-y9-Y3F" firstAttribute="leading" secondItem="rLU-AX-Twu" secondAttribute="leading" constant="20" id="Fnj-DZ-Y7j"/>
+                            <constraint firstItem="otO-y9-Y3F" firstAttribute="leading" secondItem="rLU-AX-Twu" secondAttribute="leading" constant="2" id="Fnj-DZ-Y7j"/>
                             <constraint firstAttribute="bottom" secondItem="VnY-W9-hDD" secondAttribute="bottom" id="MEw-ii-fw9"/>
                             <constraint firstItem="VnY-W9-hDD" firstAttribute="leading" secondItem="rLU-AX-Twu" secondAttribute="leading" id="QX7-fP-ueP"/>
                             <constraint firstItem="VnY-W9-hDD" firstAttribute="top" secondItem="rLU-AX-Twu" secondAttribute="top" id="YoG-Fv-860"/>
                             <constraint firstItem="WRL-6U-yas" firstAttribute="centerX" secondItem="ft6-W9-2X6" secondAttribute="centerX" id="gQS-Rm-P76"/>
-                            <constraint firstItem="rLU-AX-Twu" firstAttribute="trailing" secondItem="otO-y9-Y3F" secondAttribute="trailing" constant="20" id="khz-i4-vxo"/>
+                            <constraint firstItem="rLU-AX-Twu" firstAttribute="trailing" secondItem="otO-y9-Y3F" secondAttribute="trailing" constant="2" id="khz-i4-vxo"/>
                             <constraint firstAttribute="bottom" secondItem="otO-y9-Y3F" secondAttribute="bottom" id="n6Q-hb-ITl"/>
                             <constraint firstItem="rLU-AX-Twu" firstAttribute="trailing" secondItem="VnY-W9-hDD" secondAttribute="trailing" id="r2R-1e-Lxf"/>
                             <constraint firstItem="otO-y9-Y3F" firstAttribute="top" secondItem="rLU-AX-Twu" secondAttribute="top" id="vRa-Ez-gaY"/>
@@ -337,15 +337,15 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="leJ-D7-j4D">
-                                <rect key="frame" x="20" y="88" width="374" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="2" y="88" width="410" height="774"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Pmq-Wa-2Gb" firstAttribute="top" secondItem="aPF-Ey-Veb" secondAttribute="top" id="0xE-Cl-JCU"/>
-                            <constraint firstItem="aPF-Ey-Veb" firstAttribute="trailing" secondItem="leJ-D7-j4D" secondAttribute="trailing" constant="20" id="JOL-Sb-vcT"/>
-                            <constraint firstItem="leJ-D7-j4D" firstAttribute="leading" secondItem="aPF-Ey-Veb" secondAttribute="leading" constant="20" id="Jfq-7m-baA"/>
+                            <constraint firstItem="aPF-Ey-Veb" firstAttribute="trailing" secondItem="leJ-D7-j4D" secondAttribute="trailing" constant="2" id="JOL-Sb-vcT"/>
+                            <constraint firstItem="leJ-D7-j4D" firstAttribute="leading" secondItem="aPF-Ey-Veb" secondAttribute="leading" constant="2" id="Jfq-7m-baA"/>
                             <constraint firstItem="leJ-D7-j4D" firstAttribute="top" secondItem="aPF-Ey-Veb" secondAttribute="top" id="Rar-DK-pBt"/>
                             <constraint firstAttribute="bottom" secondItem="Pmq-Wa-2Gb" secondAttribute="bottom" id="W6i-fd-1YQ"/>
                             <constraint firstItem="Pmq-Wa-2Gb" firstAttribute="leading" secondItem="aPF-Ey-Veb" secondAttribute="leading" id="Xef-LI-MV8"/>
@@ -355,6 +355,9 @@
                         <viewLayoutGuide key="safeArea" id="aPF-Ey-Veb"/>
                     </view>
                     <navigationItem key="navigationItem" id="KLp-1C-nwS"/>
+                    <connections>
+                        <outlet property="tableView" destination="leJ-D7-j4D" id="pRa-hr-SFp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Cf-LT-GNZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -17,12 +17,12 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="animal_6" translatesAutoresizingMaskIntoConstraints="NO" id="L3d-D0-Tfu">
-                        <rect key="frame" x="0.0" y="0.0" width="229" height="248.5"/>
+                        <rect key="frame" x="10" y="0.0" width="209" height="248.5"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YoP-xQ-2TG">
                         <rect key="frame" x="8" y="256.5" width="213" height="22.5"/>
                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" red="0.24206981059999999" green="0.2647496164" blue="0.36014556879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -31,9 +31,9 @@
                 <constraint firstItem="YoP-xQ-2TG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="7Q5-45-ggq"/>
                 <constraint firstItem="L3d-D0-Tfu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Fk9-Zc-kP9"/>
                 <constraint firstItem="YoP-xQ-2TG" firstAttribute="top" secondItem="L3d-D0-Tfu" secondAttribute="bottom" constant="8" id="KlK-cO-b4o"/>
-                <constraint firstAttribute="trailing" secondItem="L3d-D0-Tfu" secondAttribute="trailing" id="O1j-bJ-9oP"/>
+                <constraint firstAttribute="trailing" secondItem="L3d-D0-Tfu" secondAttribute="trailing" constant="10" id="O1j-bJ-9oP"/>
                 <constraint firstAttribute="trailing" secondItem="YoP-xQ-2TG" secondAttribute="trailing" constant="8" id="O6i-K3-gcC"/>
-                <constraint firstItem="L3d-D0-Tfu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WCh-TK-lwc"/>
+                <constraint firstItem="L3d-D0-Tfu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="WCh-TK-lwc"/>
                 <constraint firstAttribute="bottom" secondItem="YoP-xQ-2TG" secondAttribute="bottom" constant="8" id="eOg-xB-k5e"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>

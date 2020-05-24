@@ -30,7 +30,9 @@ class ProductCell: UITableViewCell {
         productLabel.text = product.name
         productPrice.text = String(product.price)
         if let url = URL(string: product.imageUrl){
-        productImg.kf.setImage(with: url ) }
+        let placeholder = UIImage(named: "placeholder")
+            let options : KingfisherOptionsInfo = [.transition(.fade(0.3))]
+        productImg.kf.setImage(with: url , placeholder: placeholder , options: options ) }
   
         
     }

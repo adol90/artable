@@ -24,10 +24,10 @@ class CategoryCell: UICollectionViewCell {
     func configureCell(category : Category) {
         
         categoryLabel.text = category.name
-        if let url = URL(string: category.imgUrl) {
-            categoryImg.kf.setImage(with: url)
-        
-        }
+        if let url = URL(string: category.imgUrl){
+        let placeholder = UIImage(named: "placeholder")
+            let options : KingfisherOptionsInfo = [.transition(.fade(0.3))]
+        categoryImg.kf.setImage(with: url , placeholder: placeholder , options: options ) }
         
     }
     
