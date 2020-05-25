@@ -16,7 +16,6 @@
 		774C34412471D17C00C9F88B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774C343F2471D17C00C9F88B /* LaunchScreen.storyboard */; };
 		774C344F2471D9E200C9F88B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774C344E2471D9E200C9F88B /* AppDelegate.swift */; };
 		774C34512471D9E200C9F88B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774C34502471D9E200C9F88B /* SceneDelegate.swift */; };
-		774C34532471D9E200C9F88B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774C34522471D9E200C9F88B /* ViewController.swift */; };
 		774C34562471D9E200C9F88B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774C34542471D9E200C9F88B /* Main.storyboard */; };
 		774C34582471D9E700C9F88B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 774C34572471D9E700C9F88B /* Assets.xcassets */; };
 		774C345B2471D9E700C9F88B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774C34592471D9E700C9F88B /* LaunchScreen.storyboard */; };
@@ -28,6 +27,13 @@
 		DD4FD38924732E16002D1443 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD38724732E16002D1443 /* HomeVC.swift */; };
 		DDC516E62474AB4F005A1440 /* ForgetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC516E42474AB4F005A1440 /* ForgetPasswordVC.xib */; };
 		F55DB683247485AA000D11BC /* ForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55DB681247485AA000D11BC /* ForgetPasswordVC.swift */; };
+		F5684C80247C141A00A6709F /* detailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5684C7E247C141A00A6709F /* detailsVC.swift */; };
+		F5684C81247C141A00A6709F /* detailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5684C7E247C141A00A6709F /* detailsVC.swift */; };
+		F5684C82247C141A00A6709F /* detailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5684C7F247C141A00A6709F /* detailsVC.xib */; };
+		F5684C83247C141A00A6709F /* detailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5684C7F247C141A00A6709F /* detailsVC.xib */; };
+		F5684C84247C278100A6709F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D0202E2473F28D00EEF3A7 /* Extension.swift */; };
+		F5684C86247C287B00A6709F /* AdminHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5684C85247C287B00A6709F /* AdminHomeVC.swift */; };
+		F5684C88247C2E8700A6709F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5684C87247C2E8700A6709F /* GoogleService-Info.plist */; };
 		F5CB9D202475B15500FABCE8 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CB9D1F2475B15500FABCE8 /* Firebase.swift */; };
 		F5CB9D212475B25900FABCE8 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CB9D1F2475B15500FABCE8 /* Firebase.swift */; };
 		F5CB9D242475B63300FABCE8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CB9D232475B63300FABCE8 /* Category.swift */; };
@@ -63,7 +69,6 @@
 		774C344C2471D9E200C9F88B /* artableAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = artableAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		774C344E2471D9E200C9F88B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		774C34502471D9E200C9F88B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		774C34522471D9E200C9F88B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		774C34552471D9E200C9F88B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		774C34572471D9E700C9F88B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		774C345A2471D9E700C9F88B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,6 +80,10 @@
 		DD4FD38724732E16002D1443 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		DDC516E42474AB4F005A1440 /* ForgetPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordVC.xib; sourceTree = "<group>"; };
 		F55DB681247485AA000D11BC /* ForgetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordVC.swift; sourceTree = "<group>"; };
+		F5684C7E247C141A00A6709F /* detailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsVC.swift; sourceTree = "<group>"; };
+		F5684C7F247C141A00A6709F /* detailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = detailsVC.xib; sourceTree = "<group>"; };
+		F5684C85247C287B00A6709F /* AdminHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeVC.swift; sourceTree = "<group>"; };
+		F5684C87247C2E8700A6709F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F5CB9D1F2475B15500FABCE8 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		F5CB9D232475B63300FABCE8 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		F5CB9D282475BDC800FABCE8 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
@@ -160,11 +169,12 @@
 			children = (
 				774C344E2471D9E200C9F88B /* AppDelegate.swift */,
 				774C34502471D9E200C9F88B /* SceneDelegate.swift */,
-				774C34522471D9E200C9F88B /* ViewController.swift */,
+				F5684C85247C287B00A6709F /* AdminHomeVC.swift */,
 				774C34542471D9E200C9F88B /* Main.storyboard */,
 				774C34572471D9E700C9F88B /* Assets.xcassets */,
 				774C34592471D9E700C9F88B /* LaunchScreen.storyboard */,
 				774C345C2471D9E700C9F88B /* Info.plist */,
+				F5684C87247C2E8700A6709F /* GoogleService-Info.plist */,
 			);
 			path = artableAdmin;
 			sourceTree = "<group>";
@@ -175,7 +185,6 @@
 				F5CB9D262475BD3900FABCE8 /* Xibs */,
 				F5CB9D222475B61000FABCE8 /* Model */,
 				DD4FD3822473268F002D1443 /* view */,
-				F5CB9D272475BD7D00FABCE8 /* Pics */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -194,6 +203,7 @@
 		DD4FD3822473268F002D1443 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F5684C7E247C141A00A6709F /* detailsVC.swift */,
 				DD4FD383247326C0002D1443 /* RoundedModel.swift */,
 				F5CB9D282475BDC800FABCE8 /* CategoryCell.swift */,
 				F5CB9D342475D03A00FABCE8 /* ProductCell.swift */,
@@ -235,15 +245,9 @@
 			children = (
 				F5CB9D292475BDC800FABCE8 /* CategoryCell.xib */,
 				F5CB9D352475D03A00FABCE8 /* ProductCell.xib */,
+				F5684C7F247C141A00A6709F /* detailsVC.xib */,
 			);
 			path = Xibs;
-			sourceTree = "<group>";
-		};
-		F5CB9D272475BD7D00FABCE8 /* Pics */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pics;
 			sourceTree = "<group>";
 		};
 		F5D0202D2473F23500EEF3A7 /* Utilities */ = {
@@ -339,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDC516E62474AB4F005A1440 /* ForgetPasswordVC.xib in Resources */,
+				F5684C82247C141A00A6709F /* detailsVC.xib in Resources */,
 				774C34412471D17C00C9F88B /* LaunchScreen.storyboard in Resources */,
 				F5CB9D382475D03A00FABCE8 /* ProductCell.xib in Resources */,
 				774C343E2471D17C00C9F88B /* Assets.xcassets in Resources */,
@@ -352,11 +357,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5684C83247C141A00A6709F /* detailsVC.xib in Resources */,
 				774C345B2471D9E700C9F88B /* LaunchScreen.storyboard in Resources */,
 				774C34582471D9E700C9F88B /* Assets.xcassets in Resources */,
 				F5CB9D392475D03A00FABCE8 /* ProductCell.xib in Resources */,
 				774C34562471D9E200C9F88B /* Main.storyboard in Resources */,
 				F5CB9D2D2475BDC800FABCE8 /* CategoryCell.xib in Resources */,
+				F5684C88247C2E8700A6709F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +455,7 @@
 				F5CB9D362475D03A00FABCE8 /* ProductCell.swift in Sources */,
 				777814CC2472983100920F34 /* LoginVC.swift in Sources */,
 				F55DB683247485AA000D11BC /* ForgetPasswordVC.swift in Sources */,
+				F5684C80247C141A00A6709F /* detailsVC.swift in Sources */,
 				DD4FD38824732E16002D1443 /* HomeVC.swift in Sources */,
 				F5CB9D202475B15500FABCE8 /* Firebase.swift in Sources */,
 				774C34352471D17600C9F88B /* AppDelegate.swift in Sources */,
@@ -463,13 +471,15 @@
 			files = (
 				F5CB9D212475B25900FABCE8 /* Firebase.swift in Sources */,
 				F5CB9D372475D03A00FABCE8 /* ProductCell.swift in Sources */,
-				774C34532471D9E200C9F88B /* ViewController.swift in Sources */,
 				DD4FD38924732E16002D1443 /* HomeVC.swift in Sources */,
 				F5CB9D2B2475BDC800FABCE8 /* CategoryCell.swift in Sources */,
 				774C344F2471D9E200C9F88B /* AppDelegate.swift in Sources */,
 				774C34512471D9E200C9F88B /* SceneDelegate.swift in Sources */,
+				F5684C86247C287B00A6709F /* AdminHomeVC.swift in Sources */,
 				F5CB9D302475CEDA00FABCE8 /* ProductVC.swift in Sources */,
 				F5CB9D332475CF6000FABCE8 /* Product.swift in Sources */,
+				F5684C84247C278100A6709F /* Extension.swift in Sources */,
+				F5684C81247C141A00A6709F /* detailsVC.swift in Sources */,
 				DD4FD385247326C1002D1443 /* RoundedModel.swift in Sources */,
 				F5CB9D252475B63300FABCE8 /* Category.swift in Sources */,
 			);

@@ -80,9 +80,10 @@ class HomeVC: UIViewController {
     
     // this is how we fetching data from firestore
     func setCategoryListener() {
+        categories.removeAll()
         // this is the name of our colection in firestore database.
         let collectionRefernce = db.collection("categories")
-        listener = collectionRefernce.addSnapshotListener { (snap, error) in
+        listener = collectionRefernce.whereField("isActive", isEqualTo: true).addSnapshotListener { (snap, error) in
             if error != nil {
                 debugPrint(error?.localizedDescription)
                 return
@@ -131,7 +132,7 @@ class HomeVC: UIViewController {
     }
     
     func onDocumentRemoved (change : DocumentChange) {
-         let index = Int(change.newIndex)
+         let index = Int(change.oldIndex)
         categories.remove(at: index)
         collictionView.deleteItems(at: [IndexPath(item: index, section: 0)])
         

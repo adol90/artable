@@ -26,21 +26,7 @@ class ProductVC: UIViewController {
         let aproduct = Product.init(name: "car", id: "efwwe", category: "vehicle", price: 9.99, productDescription: "this is our newest car version", imageUrl: "https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80", timeStamp: Timestamp(), stock: 10, favorite: true)
         
         products.append(aproduct)
-        products.append(aproduct)
-        products.append(aproduct)
-        products.append(aproduct)
-        products.append(aproduct)
-        products.append(aproduct)
-        products.append(aproduct)
-        products.append(aproduct)
-        products.append(aproduct)
-        products.append(aproduct)
-        products.append(aproduct)
-        products.append(aproduct)
-        products.append(aproduct)
-        products.append(aproduct)
-        products.append(aproduct)
-        
+
     }
     
 
@@ -65,6 +51,19 @@ extension ProductVC : UITableViewDelegate , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return products.count
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let vc = detailsVC()
+        let selectedProduct = products[indexPath.row]
+        vc.theProduct = products[indexPath.row]
+        print(selectedProduct)
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .overCurrentContext
+        // present it ! :
+        present(vc, animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

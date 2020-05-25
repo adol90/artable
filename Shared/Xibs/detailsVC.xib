@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="detailsVC" customModule="artable" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="1CO-8y-C4j" id="nBe-rD-VIS"/>
+                <outlet property="priceLabel" destination="AVf-Xa-ats" id="9Nz-Oe-NHg"/>
+                <outlet property="productDeatileImg" destination="7wu-lv-j2l" id="Qxw-xA-a1i"/>
+                <outlet property="productDescriptionLabel" destination="n0E-n4-jEU" id="SgO-l6-7S7"/>
+                <outlet property="productLabel" destination="BcG-6d-cAv" id="G4E-3X-UPA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1CO-8y-C4j">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="a1F-qx-SQb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="627.5" translatesAutoresizingMaskIntoConstraints="NO" id="B6H-aH-6aE">
+                                <rect key="frame" x="20" y="112.5" width="374" height="627.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6yy-W2-8FH">
+                                        <rect key="frame" x="20" y="20" width="334" height="587.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animal_6" translatesAutoresizingMaskIntoConstraints="NO" id="7wu-lv-j2l">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="250" id="GwQ-YT-9wj"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ProductTitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BcG-6d-cAv">
+                                                <rect key="frame" x="0.0" y="270" width="334" height="110"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
+                                                <color key="textColor" red="0.24206981059999999" green="0.2647496164" blue="0.36014556879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVf-Xa-ats">
+                                                <rect key="frame" x="0.0" y="400" width="334" height="25"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                                <color key="textColor" red="0.24206981059999999" green="0.2647496164" blue="0.36014556879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Product Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0E-n4-jEU">
+                                                <rect key="frame" x="0.0" y="445" width="334" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <color key="textColor" red="0.24206981059999999" green="0.2647496164" blue="0.36014556879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viV-sc-fkj">
+                                                <rect key="frame" x="0.0" y="487.5" width="334" height="40"/>
+                                                <color key="backgroundColor" red="0.24206981059999999" green="0.2647496164" blue="0.36014556879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="UYh-hQ-oNa"/>
+                                                </constraints>
+                                                <state key="normal" title="Add to Cart">
+                                                    <color key="titleColor" red="0.95294117649999999" green="0.96862745100000003" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="AddButtonPressed:" destination="-1" eventType="touchUpInside" id="QCV-rE-7Dl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEc-3G-LfM">
+                                                <rect key="frame" x="0.0" y="547.5" width="334" height="40"/>
+                                                <color key="backgroundColor" red="0.83529411760000005" green="0.3921568627" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="bhh-h7-N9q"/>
+                                                </constraints>
+                                                <state key="normal" title="Keep Shopping">
+                                                    <color key="titleColor" red="0.95294117649999999" green="0.96862745100000003" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="KeepShoppingPressed:" destination="-1" eventType="touchUpInside" id="05A-Wy-iKZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6yy-W2-8FH" secondAttribute="trailing" constant="20" id="HV0-ND-lbu"/>
+                                    <constraint firstAttribute="bottom" secondItem="6yy-W2-8FH" secondAttribute="bottom" constant="20" id="jI2-8Z-KOi"/>
+                                    <constraint firstItem="6yy-W2-8FH" firstAttribute="leading" secondItem="B6H-aH-6aE" secondAttribute="leading" constant="20" id="qeq-ev-uXr"/>
+                                    <constraint firstItem="6yy-W2-8FH" firstAttribute="top" secondItem="B6H-aH-6aE" secondAttribute="top" constant="20" id="wBw-jJ-ohD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="B6H-aH-6aE" firstAttribute="centerY" secondItem="a1F-qx-SQb" secondAttribute="centerY" id="4Cw-3m-9XR"/>
+                            <constraint firstAttribute="trailing" secondItem="B6H-aH-6aE" secondAttribute="trailing" constant="20" id="C0K-dd-Rs3"/>
+                            <constraint firstItem="B6H-aH-6aE" firstAttribute="leading" secondItem="a1F-qx-SQb" secondAttribute="leading" constant="20" id="MLK-NF-8yI"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="extraLight"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1CO-8y-C4j" secondAttribute="bottom" id="IyH-z1-RI4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1CO-8y-C4j" secondAttribute="trailing" id="Rjx-Ve-63L"/>
+                <constraint firstItem="1CO-8y-C4j" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="YhK-U9-Hjr"/>
+                <constraint firstItem="1CO-8y-C4j" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gD0-xD-DFs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="animal_6" width="1964" height="1734"/>
+    </resources>
+</document>
