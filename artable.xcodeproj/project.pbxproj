@@ -21,6 +21,7 @@
 		774C345B2471D9E700C9F88B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774C34592471D9E700C9F88B /* LaunchScreen.storyboard */; };
 		777814CC2472983100920F34 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777814CB2472983100920F34 /* LoginVC.swift */; };
 		D703B0D91D2CE31D5A1FCDDD /* Pods_artable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65E58D5C39519280FB4BF7A /* Pods_artable.framework */; };
+		DD257AA4247C7E670036B42C /* AddEditCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD257AA3247C7E670036B42C /* AddEditCategoryVC.swift */; };
 		DD4FD384247326C0002D1443 /* RoundedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD383247326C0002D1443 /* RoundedModel.swift */; };
 		DD4FD385247326C1002D1443 /* RoundedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD383247326C0002D1443 /* RoundedModel.swift */; };
 		DD4FD38824732E16002D1443 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FD38724732E16002D1443 /* HomeVC.swift */; };
@@ -76,6 +77,7 @@
 		777814CB2472983100920F34 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B65E58D5C39519280FB4BF7A /* Pods_artable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_artable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DF680A4F0048F267E79C7E /* Pods-artable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-artable.release.xcconfig"; path = "Pods/Target Support Files/Pods-artable/Pods-artable.release.xcconfig"; sourceTree = "<group>"; };
+		DD257AA3247C7E670036B42C /* AddEditCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditCategoryVC.swift; sourceTree = "<group>"; };
 		DD4FD383247326C0002D1443 /* RoundedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedModel.swift; sourceTree = "<group>"; };
 		DD4FD38724732E16002D1443 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		DDC516E42474AB4F005A1440 /* ForgetPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordVC.xib; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				774C344E2471D9E200C9F88B /* AppDelegate.swift */,
 				774C34502471D9E200C9F88B /* SceneDelegate.swift */,
 				F5684C85247C287B00A6709F /* AdminHomeVC.swift */,
+				DD257AA3247C7E670036B42C /* AddEditCategoryVC.swift */,
 				774C34542471D9E200C9F88B /* Main.storyboard */,
 				774C34572471D9E700C9F88B /* Assets.xcassets */,
 				774C34592471D9E700C9F88B /* LaunchScreen.storyboard */,
@@ -477,6 +480,7 @@
 				774C34512471D9E200C9F88B /* SceneDelegate.swift in Sources */,
 				F5684C86247C287B00A6709F /* AdminHomeVC.swift in Sources */,
 				F5CB9D302475CEDA00FABCE8 /* ProductVC.swift in Sources */,
+				DD257AA4247C7E670036B42C /* AddEditCategoryVC.swift in Sources */,
 				F5CB9D332475CF6000FABCE8 /* Product.swift in Sources */,
 				F5684C84247C278100A6709F /* Extension.swift in Sources */,
 				F5684C81247C141A00A6709F /* detailsVC.swift in Sources */,
